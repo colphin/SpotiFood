@@ -23,5 +23,6 @@ mizzao:bootstrap-3
 iron:router
 accounts-password
 accounts-base
-accounts-ui-unstyled
 accounts-facebook
+accounts-ui
+sacha:spin

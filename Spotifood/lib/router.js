@@ -1,4 +1,6 @@
 Router.configure({
-  layoutTemplate: 'layout'
+  layoutTemplate: 'layout',
+  loadingTemplate: 'loading',
+  waitOn: function() {return Meteor.subscribe('Recommendations');}
 });
-Router.route('/');
+Router.route('/',{name: 'register'});
