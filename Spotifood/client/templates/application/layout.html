@@ -6,7 +6,11 @@
       </div>
     </header>
     <div id="main">
-      {{> loginButtons}}
+    	{{#if currentUser}}
+    		{{> home}}
+    	{{else}}
+    		{{> register}}
+    	{{/if}}
     </div>
   </div>
 </template>

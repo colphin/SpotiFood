@@ -1,6 +1,7 @@
 Router.configure({
   layoutTemplate: 'layout',
   loadingTemplate: 'loading',
-  waitOn: function() {return Meteor.subscribe('Recommendations');}
+  // waitOn: function() {return Meteor.subscribe('Recommendations');}
 });
-Router.route('/',{name: 'register'});
+
+Router.route('/', {name: 'home'});

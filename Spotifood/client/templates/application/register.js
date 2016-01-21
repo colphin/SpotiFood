@@ -1,19 +1,12 @@
-Accounts.ui.config({
-  requestPermissions: {
-    facebook: ['user_likes'],
-    github: ['user', 'repo']
-  },
-  requestOfflineToken: {
-    google: true
-  },
-  passwordSignupFields: 'USERNAME_AND_OPTIONAL_EMAIL'
-});
-
-// Template.register.events({
-//     'submit form': function(event){
-//         event.preventDefault();
-//         var email = $('[name=email]').val();
-//         var password = $('[name=password]').val();
-//     }
-// });
-
+Template.register.events({
+	"submit form": function(event, template){
+		event.preventDefault();
+		var emailVar = template.find("#email").value;
+		var passwordVar = template.find('#password').value;
+		// console.log('form submitted');
+		Accounts.createUser({
+			email:emailVar,
+			password:passwordVar
+		});
+	}
+})
