@@ -1,0 +1,12 @@
+/*Designed by Calvin Yin*/
+
+body {
+	text-align: right;
+	background: url('/pictures/1.jpg') no-repeat center center fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+/*	overflow: hidden;
+*/	height: 100%;
+}
+
