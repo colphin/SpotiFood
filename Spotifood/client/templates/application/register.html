@@ -1,6 +1,8 @@
 <template name="register">
 	<div id= "regform" >
-	<h1>Spotifood</h1>
+	<h1>
+		<img src="Spotifood.jpg">
+	</h1>
     <form class="register">
         <p><input type="email" id="email" placeholder="Email"></p>
         <p><input type="password" id="password" placeholder="Password"></p>
@@ -9,8 +11,15 @@
 	</div>
 	<style>
 		#regform {
-			margin-left: auto;	
-    		margin-right: auto;
+			position: absolute;	
+    		top: 50%;
+    		left: 50%;
+    		transform: translate(-50%, -50%);
+
+
+
+
+
 		}
 	</style>
 </template>
