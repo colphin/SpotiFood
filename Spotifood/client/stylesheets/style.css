@@ -2,7 +2,7 @@
 
 body {
 	text-align: right;
-	background: url('/pictures/1.jpg') no-repeat center center fixed;
+	background: url('/pictures/9.jpg') no-repeat center center fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -10,9 +10,18 @@ body {
 */	height: 100%;
 }
 
+#logo{
+	margin: 0 auto;
+	display: block;
+    width: 20%;
+    padding: 10px;
+
+}
+
 #regform {
-
-
-
-	
+	text-align: center;
+	opacity: 80%;
+	/*top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
 }
