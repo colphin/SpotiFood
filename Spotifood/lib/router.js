@@ -5,3 +5,17 @@ Router.configure({
 });
 
 Router.route('/', {name: 'home'});
+
+
+Router.route('/login', function () {
+  this.render('login');
+  this.layout('login');
+
+});
+ 
+ 
+Router.route('/register', function () {
+  this.render('register');
+  this.layout('register');
+});
+ 
