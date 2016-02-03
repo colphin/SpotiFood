@@ -1,6 +1,5 @@
-<template name= "preferences">
 <head>
-	<title>Preferences</title>
+	<title>Preference Page</title>
 	<link rel="stylesheet" type="text/css" href="preference.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -71,17 +70,24 @@
 
 
 		<h3>What is your typical price range? (per person)</h3>
-		<label class="checkbox-inline"><input type="checkbox" value=""> &lt; $10</label>
-		<label class="checkbox-inline"><input type="checkbox" value=""> &lt; $20</label>
-		<label class="checkbox-inline"><input type="checkbox" value=""> &lt; $30</label>
-		<label class="checkbox-inline"><input type="checkbox" value=""> I'm ballin, money aint no problem</label>
+		<label class="radio-inline"><input type="radio" name="optradio">0-10</label>
+		<label class="radio-inline"><input type="radio" name="optradio">10-20</label>
+		<label class="radio-inline"><input type="radio" name="optradio">20-30</label>
+		<label class="radio-inline"><input type="radio" name="optradio">30-40</label>
+		<label class="radio-inline"><input type="radio" name="optradio">40-50</label>
+		<label class="radio-inline"><input type="radio" name="optradio">I'm balling money ain't problem</label>
 
 		<h3>Minimum Star Rating?</h3>
-
+		<label class="radio-inline"><input type="radio" name="optradio">0</label>
+		<label class="radio-inline"><input type="radio" name="optradio">1</label>
+		<label class="radio-inline"><input type="radio" name="optradio">2</label>
+		<label class="radio-inline"><input type="radio" name="optradio">3</label>
+		<label class="radio-inline"><input type="radio" name="optradio">4</label>
+		<label class="radio-inline"><input type="radio" name="optradio">5</label>
 
 	</div>
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 
-</template>
+
