@@ -18,4 +18,9 @@ Router.route('/register', function () {
   this.render('register');
   this.layout('register');
 });
- 
+
+Router.route('/preferences', function () {
+  this.render('preferences');
+  this.layout('preferences');
+
+}); 
