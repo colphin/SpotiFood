@@ -25,6 +25,7 @@
         </button>
         {{> navBrand}}
       </div>
+<<<<<<< HEAD
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           {{> navItem1}}
@@ -76,6 +77,18 @@
         {{> register}}
         {{> login}}
       {{/if}}
+=======
+      <div class="login-button">
+        <a href="/">Login</a>
+      </div>
+    </header>
+    <div id="main">
+    	{{#if currentUser}}
+    		{{> yield}}
+    	{{else}}
+    		{{> register}}
+    	{{/if}}
+>>>>>>> bc4eda0a7da1d5929663b458d979d3c245ddaff2
     </div>
   </div>
 </template> -->
