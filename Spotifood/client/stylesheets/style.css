@@ -43,16 +43,12 @@ body {
 .form input[type="email"] {
   margin-top: 25px;
   margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  outline:none;
+  box-shadow:none;
 }
 
 .form input[type="password"] {
   margin-bottom: -1px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  outline:none;
+  box-shadow:none;
 }
 
 .form button[type="submit"]{
