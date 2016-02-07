@@ -1,4 +1,5 @@
-<head>
+
+<template name="preferences">
 	<title>Preference Page</title>
 	<link rel="stylesheet" type="text/css" href="../../stylesheets/preference.css">
 	<!-- Latest compiled and minified CSS -->
@@ -6,90 +7,89 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-</head>
 
-<body>
-	<div class="container">
-		<header>
-			<h1>Your Preferences</h1>
-		</header>
-		<h3>Check cuisines you would absolutely not eat.</h3>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">Indonesian</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">Mexican</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">Chinese</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">Spanish</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">French</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">Japanese</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">Turkey</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">Indian</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">Thai</label>
-		</div>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Your Preferences</h1>
+			</header>
+			<h3>Check cuisines you would absolutely not eat.</h3>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Indonesian</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Mexican</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Chinese</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Spanish</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">French</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Japanese</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Turkey</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Indian</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Thai</label>
+			</div>
 
-		<h3>What types of Restaurants are you interested in?</h3>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">Fast Food</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">Ethnic</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">Family style</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">Buffet</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">Barbeque</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">Cafe</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">Hipster</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">All of the Above</label>
-		</div>
-
-
-		<h3>What is your typical price range? (per person)</h3>
-		<label class="radio-inline"><input type="radio" name="optradio">0-10</label>
-		<label class="radio-inline"><input type="radio" name="optradio">10-20</label>
-		<label class="radio-inline"><input type="radio" name="optradio">20-30</label>
-		<label class="radio-inline"><input type="radio" name="optradio">30-40</label>
-		<label class="radio-inline"><input type="radio" name="optradio">40-50</label>
-		<label class="radio-inline"><input type="radio" name="optradio">I'm balling money ain't problem</label>
-
-		<h3>Minimum Star Rating?</h3>
-		<label class="radio-inline"><input type="radio" name="optradio">0</label>
-		<label class="radio-inline"><input type="radio" name="optradio">1</label>
-		<label class="radio-inline"><input type="radio" name="optradio">2</label>
-		<label class="radio-inline"><input type="radio" name="optradio">3</label>
-		<label class="radio-inline"><input type="radio" name="optradio">4</label>
-		<label class="radio-inline"><input type="radio" name="optradio">5</label><br><br>
-
-		<button type="button" class="btn btn-primary btn-md">Submit</button>
-
-	</div>
-
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-</body>
+			<h3>What types of Restaurants are you interested in?</h3>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Fast Food</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Ethnic</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Family style</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Buffet</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Barbeque</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Cafe</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Hipster</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">All of the Above</label>
+			</div>
 
 
+			<h3>What is your typical price range? (per person)</h3>
+			<label class="radio-inline"><input type="radio" name="optradio">0-10</label>
+			<label class="radio-inline"><input type="radio" name="optradio">10-20</label>
+			<label class="radio-inline"><input type="radio" name="optradio">20-30</label>
+			<label class="radio-inline"><input type="radio" name="optradio">30-40</label>
+			<label class="radio-inline"><input type="radio" name="optradio">40-50</label>
+			<label class="radio-inline"><input type="radio" name="optradio">I'm balling money ain't problem</label>
+
+			<h3>Minimum Star Rating?</h3>
+			<label class="radio-inline"><input type="radio" name="optradio">0</label>
+			<label class="radio-inline"><input type="radio" name="optradio">1</label>
+			<label class="radio-inline"><input type="radio" name="optradio">2</label>
+			<label class="radio-inline"><input type="radio" name="optradio">3</label>
+			<label class="radio-inline"><input type="radio" name="optradio">4</label>
+			<label class="radio-inline"><input type="radio" name="optradio">5</label><br><br>
+
+			<button type="button" class="btn btn-primary btn-md">Submit</button>
+
+		</div>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+
+</template>
