@@ -17,8 +17,12 @@
         <li><a href="/recommendations">Recommendations</a></li> 
       </ul>
       <ul class="nav navbar-nav navbar-right">
+      {{#if currentUser}}
+        <li> <a href="#" class="logout">Logout</a> </li>
+      {{else}}
         <li><a href="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      {{/if}}
       </ul>
     </div>
   </div>
@@ -30,6 +34,7 @@
       {{#if currentUser}}
         {{> yield}}
       {{else}}
+        aklsudbg
         {{> register}}
       {{/if}}
     </div>
