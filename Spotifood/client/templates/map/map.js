@@ -144,7 +144,19 @@ Template.map.onCreated(function() {
 
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(latLng.lat, latLng.lng),
+      map: map.instance,
+      icon: "/pictures/marker.png"
+    });
+
+    var restArr = Posts.find().fetch()
+    console.log(restArr.lat)
+    console.log(restArr.lng)
+
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(34.413279, -119.855687),
       map: map.instance
     });
+
+
   });
 });
