@@ -1,0 +1,24 @@
+<template name= "Restaurant">
+	<h1 class= "page-title">Here are your Restaurant Recommendations!</h1>
+	{{#each recipes}}
+		{{> MenuItem}}
+	{{else}}
+		<h3>No Preferences? Click <a href="/pref-page">here</a> to narrow down your searches!</h3>
+	{{/each}}
+
+</template>
+
+
+<template name="MenuItem">
+	<div class="menu-item">
+		<h3>{{PrefName}}</h3>
+		<p>Price Range: {{Price}} dollars</p>
+		<p>Minimum Stars: {{Stars}}</p>
+		<p>Prioritizing these Cuisines</p>
+		<p>	
+			{{#each Cuisines}}
+				<span class="ingredient">{{Cuisine}}</span>
+			{{/each}}
+		</p>
+	</div>	
+</template>

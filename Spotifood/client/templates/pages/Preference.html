@@ -1,0 +1,28 @@
+<template name="Recipe">
+	<article class="recipe">
+			{{#if editMode}}
+				{{> quickForm collection="Recipes" id=updateRecipeId type="update" doc=this autosave=true options="allowed"}}
+			{{else}}
+				<h3>{{PrefName}}</h3>
+				<p>Price Range: {{Price}} dollars</p>
+				<p>Minimum Stars: {{Stars}}</p>
+				<p>Prioritizing these Cuisines</p>
+				<p>	
+					{{#each Cuisines}}
+						<span class="ingredient">{{Cuisine}}</span>
+					{{/each}}
+				</p>
+
+					{{#if inMenu}}
+						<button class="btn-deny toggle-menu">Uninitialize this preference</button>
+						{{else}}
+						<button class="btn-primary toggle-menu">initialize this preference</button>
+					{{/if}}
+			{{/if}}
+			<i class="fa fa-pencil"></i>
+			<i class="fa fa-trash"></i>
+			
+		
+		
+	</article>
+</template>

@@ -92,5 +92,18 @@ var requireLogin = function() {
   }
 }
 
+Router.route('/pref-page', {
+  name: 'pref-page',
+  template: 'Recipes'
+});
+
+Router.route('/restaurants', {
+  name: 'restaurants',
+  template: 'Restaurant'
+  
+});
+
+
+
 Router.onBeforeAction('dataNotFound', {only: 'postPage'});
 Router.onBeforeAction(requireLogin, {only: 'postSubmit'});
