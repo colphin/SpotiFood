@@ -194,11 +194,23 @@ Template.map.onCreated(function() {
         + 'https://www.yelp.com/biz/dominos-pizza-goleta-3?osq=Domino%27s+Pizza</a></div>'
     })
 
+    var infowin8 = new google.maps.InfoWindow({
+        content: '<div id="infowin"><p><b>Chipotle</b></p>'
+        + '<a href="https://www.yelp.com/biz/chipotle-mexican-grill-goleta">'
+        + 'https://www.yelp.com/biz/chipotle-mexican-grill-goleta</a></div>'
+    })
+
+    var infowin9 = new google.maps.InfoWindow({
+        content: '<div id="infowin"><p><b>Rosarito</b></p>'
+        + '<a href="https://www.yelp.com/biz/rosarito-isla-vista">'
+        + 'https://www.yelp.com/biz/rosarito-isla-vista</a></div>'
+    })
+
     var marker0 = new google.maps.Marker({
       position: new google.maps.LatLng(34.413279, -119.855687),
       map: map.instance,
       title: "Freebirds"
-    });
+  });
 
     var marker1 = new google.maps.Marker({
       position: new google.maps.LatLng(34.428941, -119.869116),
@@ -242,6 +254,18 @@ Template.map.onCreated(function() {
       title: "Domino's Pizza"
   });
 
+    var marker8 = new google.maps.Marker({
+      position: new google.maps.LatLng(34.428949, -119.869328),
+      map: map.instance,
+      title: "Chipotle"
+  });
+
+    var marker9 = new google.maps.Marker({
+      position: new google.maps.LatLng(34.411802, -119.856825),
+      map: map.instance,
+      title: "Rosarito"
+  });
+
     marker0.addListener('click', function() {
         infowin0.open(map.instance, marker0);
     });
@@ -276,6 +300,14 @@ Template.map.onCreated(function() {
 
     marker7.addListener('click', function() {
         infowin7.open(map.instance, marker7);
+    });
+
+    marker8.addListener('click', function() {
+        infowin8.open(map.instance, marker8);
+    });
+
+    marker9.addListener('click', function() {
+        infowin9.open(map.instance, marker9);
     });
 });
 });
