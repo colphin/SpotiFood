@@ -154,7 +154,20 @@ Template.map.onCreated(function() {
 
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(34.413279, -119.855687),
-      map: map.instance
+      map: map.instance,
+      title: "Freebirds"
+    });
+
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(34.428941, -119.869116),
+      map: map.instance,
+      title: "Lilys Tacos"
+    });
+
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(34.436368, -119.830411),
+      map: map.instance,
+      title: "Taco Bell"
     });
 
 
