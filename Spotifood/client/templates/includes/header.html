@@ -1,3 +1,5 @@
+<!-- nav bar that appears on top of the screen -->
+
 <template name="header">
   <nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
@@ -7,35 +9,35 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{pathFor 'home'}}">Spotifood</a>
+      <a class="navbar-brand" href="{{pathFor 'home'}}">Spotifood</a> <!-- brings users back to home page -->
     </div>
-    <div class="collapse navbar-collapse" id="navigation">
+    <div class="collapse navbar-collapse" id="navigation"> 
       <ul class="nav navbar-nav">
         {{#if currentUser}}
         <li class="{{activeRouteClass 'home' 'newPosts'}}">
-          <a href="{{pathFor 'newPosts'}}">New</a>
+          <a href="{{pathFor 'newPosts'}}">New</a> <!-- brings users to new posts made -->
         </li>
         <li class="{{activeRouteClass  'bestPosts'}}">
-          <a href="{{pathFor 'bestPosts'}}">Best</a>
+          <a href="{{pathFor 'bestPosts'}}">Best</a> <!-- brings users to the best page, with specially marked restaurants by the user -->
         </li>
         
         <li class="{{activeRouteClass  'pref-page'}}">
-          <a href="{{pathFor 'pref-page'}}">Your Preferences</a>
+          <a href="{{pathFor 'pref-page'}}">Your Preferences</a> <!-- brings users to the preferences page where they can edit / add more preferences -->
         </li>
         <li class="{{activeRouteClass  'restaurants'}}">
-          <a href="{{pathFor 'restaurants'}}">Your Restaurants</a>
+          <a href="{{pathFor 'restaurants'}}">Your Restaurants</a>  <!-- restaurants for users to view based on preferences -->
         </li>
         
           <li class="{{activeRouteClass 'postSubmit'}}">
-            <a href="{{pathFor 'postSubmit'}}">Submit Post</a>
+            <a href="{{pathFor 'postSubmit'}}">Submit Post</a> <!-- button for users to submit posts -->
           </li>
           <li class="dropdown">
-            {{> notifications}}
+            {{> notifications}} <!-- dropdown menu that shows new notifications -->
           </li>
         {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        {{> loginButtons}}
+        {{> loginButtons}} <!-- login / sign up button upon visiting page for the first time, also allows users to change password or sign out if they are logged in  -->
       </ul>
     </div>
   </nav>

@@ -2,17 +2,17 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
     Notifications
     {{#if notificationCount}}
-      <span class="badge badge-inverse">{{notificationCount}}</span>
+      <span class="badge badge-inverse">{{notificationCount}}</span> <!-- show number of notifications -->
     {{/if}}
     <b class="caret"></b>
   </a>
   <ul class="notification dropdown-menu">
     {{#if notificationCount}}
       {{#each notifications}}
-        {{> notificationItem}}
+        {{> notificationItem}} <!-- display notifications -->
       {{/each}}
     {{else}}
-      <li><span>No Notifications</span></li>
+      <li><span>No Notifications</span></li>  <!-- no notifications -->
     {{/if}}
   </ul>
 </template>
@@ -20,7 +20,7 @@
 <template name="notificationItem">
   <li>
     <a href="{{notificationPostPath}}">
-      <strong>{{commenterName}}</strong> commented on your post
+      <strong>{{commenterName}}</strong> commented on your post <!-- notification to let users know who commented on their post -->
     </a>
   </li>
 </template>
